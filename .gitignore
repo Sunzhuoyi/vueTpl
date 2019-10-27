@@ -3,4 +3,4 @@ dist/*
 npm-debug.log
 .vscode
 .DS_Store
-/idea/
+/.idea/
