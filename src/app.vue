@@ -1,6 +1,7 @@
 <template>
     <div id="app">
         <h2>欢迎使用项目模板</h2>
+        <router-view/>
     </div>
 </template>
 
@@ -16,6 +17,6 @@
     h2 {
         color: $black;
         background-color: $yellow;
-        transform: rotate(20deg);
+        transform: rotate(0deg);
     }
 </style>

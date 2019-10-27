@@ -4,8 +4,12 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "start": "webpack-dev-server --open",
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "webpack --watch"
+  },
+  "proxy": {
+    "/api": "http://localhost:3000"
   },
   "keywords": [],
   "author": "",
@@ -25,12 +29,13 @@
     "vue-loader": "^15.7.1",
     "vue-template-compiler": "^2.6.10",
     "webpack": "^4.39.1",
-    "webpack-cli": "^3.3.6"
+    "webpack-cli": "^3.3.6",
+    "webpack-dev-server": "^3.9.0"
   },
   "dependencies": {
     "@babel/polyfill": "^7.4.4",
     "vue": "^2.6.10",
-    "vue-router": "^3.1.2"
+    "vue-router": "^3.1.3"
   },
   "browserslist": [
     "> 0.5%",

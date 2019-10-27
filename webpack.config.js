@@ -11,6 +11,11 @@ module.exports = {
         filename: '[name].js',
         path: path.resolve(__dirname, 'dist')
     },
+    devServer: {
+        contentBase: path.join(__dirname, "dist"),
+        hot: true
+    },
+    devtool: "eval-source-map",
     module: {
         rules: [
             {
