@@ -8,7 +8,7 @@
     "build": "webpack --watch"
   },
   "keywords": [],
-  "author": "",c
+  "author": "",
   "license": "ISC",
   "devDependencies": {
     "@babel/core": "^7.5.5",
@@ -32,7 +32,7 @@
     "vue": "^2.6.10",
     "vue-router": "^3.1.2"
   },
-  "browserlist": [
+  "browserslist": [
     "> 0.5%",
     "last 2 versions"
   ]
