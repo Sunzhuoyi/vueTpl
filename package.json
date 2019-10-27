@@ -8,7 +8,7 @@
     "build": "webpack --watch"
   },
   "keywords": [],
-  "author": "",
+  "author": "",c
   "license": "ISC",
   "devDependencies": {
     "@babel/core": "^7.5.5",
