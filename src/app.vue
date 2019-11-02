@@ -14,7 +14,7 @@
     export default {
         async created() {
             let res = await axios.get(api.getUserInfo);
-            console.log(res)
+                console.log(res)
         }
     };
 </script>
