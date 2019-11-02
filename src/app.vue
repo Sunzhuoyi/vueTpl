@@ -6,6 +6,8 @@
 </template>
 
 <script>
+    /*禁用eslint规则*/
+    /*eslint-disable*/
     import axios from "axios";
     import api from "../mock/api.js";
 

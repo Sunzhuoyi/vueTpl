@@ -84,6 +84,15 @@ module.exports = {
                 test: /\.js$/,
                 exclude: /node_modules/,
                 loader: "babel-loader"
+            },
+            {
+                test: /\.(js|vue)$/,
+                exclude: /node_modules/,
+                enforce: "pre", // 确保eslint检查的是未经其他Loader处理的源代码
+                options: {
+                    formatter: require("eslint-friendly-formatter")
+                },
+                loader: "eslint-loader",
             }
         ]
     },
