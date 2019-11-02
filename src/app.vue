@@ -6,9 +6,15 @@
 </template>
 
 <script>
+    import axios from "axios";
+    import api from "../mock/api.js";
+
     export default {
-        name: "app"
-    }
+        async created() {
+            let res = await axios.get(api.getUserInfo);
+            console.log(res)
+        }
+    };
 </script>
 
 <style scoped lang="scss">

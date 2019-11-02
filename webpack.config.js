@@ -13,7 +13,10 @@ module.exports = {
     },
     devServer: {
         contentBase: path.join(__dirname, "dist"),
-        hot: true
+        hot: true,
+        proxy: {
+            "/api": "http://localhost:8081"
+        }
     },
     devtool: "eval-source-map",
     module: {
