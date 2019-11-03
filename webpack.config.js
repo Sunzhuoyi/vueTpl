@@ -1,6 +1,7 @@
 const path = require("path");
 const VueLoaderPlugin = require('vue-loader/lib/plugin');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
+const StyleLintPlugin = require('stylelint-webpack-plugin');
 
 module.exports = {
     mode: "none",
@@ -101,6 +102,9 @@ module.exports = {
         new HtmlWebpackPlugin({
             template: "./public/index.html",
             title: "项目模版"
-        })
+        }),
+        new StyleLintPlugin({
+            files: ["src/**/*.{vue,css,scss,sass}"]
+        }),
     ]
 }

@@ -14,13 +14,17 @@
     export default {
         async created() {
             let res = await axios.get(api.getUserInfo);
-                console.log(res)
+            console.log(res)
         }
     };
 </script>
 
 <style scoped lang="scss">
-    $black: black;
+    /* stylelint-disable unit-whitelist 禁用一条规则*/
+    /*
+        stylelint-disable
+    */
+    $black: rgb(1, 2, 3);
     $yellow: yellow;
     h2 {
         color: $black;
